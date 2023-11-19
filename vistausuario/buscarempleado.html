@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de Empleados</title>
+  <link rel="stylesheet" href="stylesbempleado.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Buscador de Empleados</h1>
+    </header>
+    <main>
+      <form action="/" method="post" class="search-form">
+        <div class="search-container">
+          <input type="text" name="busqueda" class="search-input" placeholder="Buscar empleado">
+          <input type="submit" value="Buscar" class="search-button">
+        </div>
+      </form>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Área</th>
+            <th>Cargo</th>
+            <th>Estado</th>
+            <th>Activo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jhon</td>
+            <td>Del Carpio</td>
+            <td>jhon@mail.com</td>
+            <td>Recursos Humanos</td>
+            <td>Administrador</td>
+            <td>Vacaciones</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

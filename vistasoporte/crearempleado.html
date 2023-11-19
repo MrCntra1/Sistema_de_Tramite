@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear nuevo empleado</title>
+  <link rel="stylesheet" href="stylecempleado.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crear nuevo empleado</h1>
+    <form action="/action_page.php" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese nombre">
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingrese apellido">
+      </div>
+      <div class="form-group">
+        <label for="dni">DNI</label>
+        <input type="number" class="form-control" name="dni" id="dni" placeholder="Ingrese DNI">
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese correo electrónico">
+      </div>
+      <div class="form-group">
+        <label for="area">Área</label>
+        <select class="form-control" name="area" id="area">
+          <option value="" disabled selected>Seleccione un área</option>
+          <option value="ventas">Ventas</option>
+          <option value="marketing">Marketing</option>
+          <option value="soporte">Soporte</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cargo">Cargo</label>
+        <select class="form-control" name="cargo" id="cargo">
+          <option value="" disabled selected>Seleccione un cargo</option>
+          <option value="vendedor">Vendedor</option>
+          <option value="marketero">Marketero</option>
+          <option value="soporte técnico">Soporte técnico</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="estado">Estado</label>
+        <select class="form-control" name="estado" id="estado">
+          <option value="" disabled selected>Seleccione un estado</option>
+          <option value="activo">Activo</option>
+          <option value="inactivo">Inactivo</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Crear nuevo empleado</button>
+    </form>
+  </div>
+</body>
+</html>

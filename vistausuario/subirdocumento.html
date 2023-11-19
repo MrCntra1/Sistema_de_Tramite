@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Subir documentos</title>
+  <link rel="stylesheet" href="stylesubirdocumentos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Subir documentos</h1>
+
+    <form action="submit.php" method="post" enctype="multipart/form-data" class="upload-form">
+      <div class="form-group">
+        <label for="numero_expediente">Número de expediente</label>
+        <input type="text" name="numero_expediente" id="numero_expediente" class="form-control" placeholder="20160000003">
+      </div>
+
+      <div class="form-group">
+        <label for="tipo_documento">Tipo de documento</label>
+        <select name="tipo_documento" id="tipo_documento" class="form-control">
+          <option value="DNI">DNI</option>
+          <option value="Pasaporte">Pasaporte</option>
+          <option value="Certificado de nacimiento">Certificado de nacimiento</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nombre_documento">Nombre de documento</label>
+        <input type="text" name="nombre_documento" id="nombre_documento" class="form-control" placeholder="Ingresar nombre de documento">
+      </div>
+
+      <div class="form-group">
+        <label for="documento">Documento</label>
+        <input type="file" name="documento" id="documento" accept="application/vnd.openxmlformats-officedocument.presentationml.presentation, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/pdf, application/vnd.ms-excel" class="form-control">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Subir documento</button>
+    </form>
+</div>
+<script src="scriptsdocumento.js"></script>
+</body>
+</html>

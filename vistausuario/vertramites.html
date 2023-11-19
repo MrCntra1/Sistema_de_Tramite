@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ver Trámites</title>
+  <link rel="stylesheet" href="stylesvtramites.css">
+</head>
+<body>
+<div class="container">
+  <h1>Trámites en Proceso</h1>
+  <div class="filter-bar">
+    <label for="status">Filtrar por Estado:</label>
+    <select id="status" class="status-select">
+      <option value="todos">Todos</option>
+      <option value="en-proceso">En Proceso</option>
+      <option value="finalizados">Finalizados</option>
+    </select>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Asunto</th>
+        <th>Participantes</th>
+        <th>Inicio</th>
+        <th>Finalización</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>20160000001</td>
+        <td>Crear un evento</td>
+        <td>De: Mendoza Alexis<br>Para: Recursos Humanos</td>
+        <td>2023-11-10 15:15:00</td>
+        <td>2023-11-10 15:17:34</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
